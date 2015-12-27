@@ -1,0 +1,32 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="top"
+    android:background="#CCFFFF"
+    android:textAppearance="?android:attr/textAppearanceLarge" >
+
+    <TableRow>
+
+        <RadioButton
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0px"
+            android:layout_toLeftOf="@+id/shwtitle"
+            android:button="@drawable/customradiobutton"
+            android:checked="false"
+            android:clickable="false"
+            android:focusable="false"
+            android:freezesText="false" />
+
+        <TextView
+            android:id="@+id/shwtitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/checkbox"
+            android:padding="1dp"
+            android:textColor="#000000"
+            android:textSize="17dip" />
+    </TableRow>
+
+</TableLayout>

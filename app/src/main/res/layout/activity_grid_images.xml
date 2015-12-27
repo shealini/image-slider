@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <slider.image.shelly.com.slider.dynamicgrid.DynamicGridView
+        android:id="@+id/grid"
+        android:layout_width="fill_parent"
+        android:layout_height="350dip"
+
+        android:layout_weight="0.42"
+        android:columnWidth="100dip"
+        android:gravity="center"
+        android:horizontalSpacing="5dip"
+        android:numColumns="auto_fit"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dip"
+        android:layout_marginTop="10dp">
+    </slider.image.shelly.com.slider.dynamicgrid.DynamicGridView>
+
+    <TextView
+        android:id="@+id/imagenote"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imagenote1"
+        android:layout_centerHorizontal="true"
+        android:gravity="right"
+        android:text="** Long Press to delete   "
+        android:textColor="#999999"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/imagenote1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/row1"
+        android:layout_centerHorizontal="true"
+        android:gravity="right"
+        android:text="** Click on Image to see full swipable view   "
+        android:textColor="#999999"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/addImageButton"
+            android:layout_width="0dip"
+            android:layout_height="44dip"
+            android:layout_weight="0.4"
+            android:background="@drawable/custombutton"
+            android:gravity="center_horizontal"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_action_new_picture" />
+
+        <ImageButton
+            android:id="@+id/cameraButton"
+            android:layout_width="0dip"
+            android:layout_height="44dip"
+            android:layout_weight="0.3"
+            android:background="@drawable/custombutton"
+            android:gravity="center_horizontal"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mycam"
+            android:tint="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/playImageButton"
+            android:layout_width="0dip"
+            android:layout_height="44dip"
+            android:layout_weight="0.4"
+            android:background="@drawable/custombutton"
+            android:gravity="center_horizontal"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_action_slideshow" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
